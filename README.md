@@ -1,11 +1,13 @@
 # 💀 DeathClient – EaglerCraft Hack Client
 
-## Newest Version: v1.4.1 (stable) v1.4.2 (beta)
+## Newest Version: v1.4.2 (1.8.8, stable) v1.4.2 (1.12.2, beta)
 
 ### Screenshots: https://github.com/Death68093/DeathClient-EaglerCraft-/tree/main#-screenshots
 
 # Announcement:
-  - V 1.12.2 COMING SOON!!
+  - V1.12.2 IS HERE!! Play the beta now!
+  - We have a ClientSpoofer, so be sure to turn it on BEFORE joining servers (you can go into a singleplayer world to do this)
+
 
 **Now back to your regularly scheduled programming :D**
 
