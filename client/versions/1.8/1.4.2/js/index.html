@@ -51,7 +51,7 @@
                 worldsDB: "worlds",
                 wispServerURL: "wss://deathclient-eaglercraft.onrender.com",
                 logInvalidCerts: true,
-                crashOnUncaughtExceptions: true,
+                crashOnUncaughtExceptions: false,
                 enableDownloadOfflineButton: false,
                 checkRelaysForUpdates: true,
                 downloadOfflineButtonLink: "https://github.com/Death68093/DeathClient-EaglerCraft-/releases",
@@ -61,7 +61,7 @@
                     { addr: "complex.lat", name: "Complex" },
                     { addr: "wss://mc.archyverse.org", name: "ArchyVerse" },
                     { addr: "wss://mc.voidsent.net", name: "Voidsent" },
-                    { addr: "wss://arch.mct", name: "ArchMC" }
+                    { addr: "wss://arch.mc", name: "ArchMC" }
                 ],
                 relays: [
                     { addr: "wss://relay.deev.is/", comment: "lax1dude relay #1", primary: relayId === 0 },
@@ -88,6 +88,27 @@
             main();
         });
         </script>
+		<script>
+    window.addEventListener('error', function(event) {
+        
+        if (event.message && event.message.includes("closure invoked recursively or after being dropped")) {
+            
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            
+            alert("Wispcraft encountered a network error and failed! The game will continue running. This means you can't join java servers such as Hypixel, but you can still play singleplayer and eaglercraft servers.");
+            return true;
+        }
+        
+    }, true);
+
+    window.addEventListener('unhandledrejection', function(event) {
+        if (event.reason && event.reason.toString().includes("closure invoked recursively")) {
+            event.preventDefault();
+            alert("Wispcraft encountered a network error and failed!");
+        }
+    });
+</script>
 	</head>
 	<body style="margin:0px;width:100%;height:100%;overflow:hidden;background-color:black;" id="game_frame">
 		<!-- Disabled VC for now
