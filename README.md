@@ -8,6 +8,8 @@
   - V1.12.2 IS HERE!! Play the beta now!
   - We have a ClientSpoofer, so be sure to turn it on BEFORE joining servers (you can go into a singleplayer world to do this)
 
+  - School is out for me, meaning I wont be updated the client nearly as much, I will try to update it at least once every 3 days to a week, but I have less time to do so. Also I am currently away from home and will not return until Sunday, May 31. So please bear with me as I haven't left!
+
 
 **Now back to your regularly scheduled programming :D**
 
